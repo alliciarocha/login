@@ -64,34 +64,38 @@
 
       <div class="signup-form hidden" id="signupForm">
         <form>
-          <h1>Sing Up</h1>
+          <h1>Create An Account</h1>
+
+          <div class="input-box">
+            <input type="text" required />
+            <label>Full Name</label>
+          </div>
 
           <div class="input-box">
             <input type="email" required />
             <label>Username</label>
-            <i class="bx bx-user"></i>
           </div>
 
           <div class="input-box">
             <input type="password" required />
             <label>Password</label>
-            <i class="bx bx-lock-alt"></i>
           </div>
 
-          <div class="remember-forgot">
-            <label>
-              <input type="checkbox" />
-              Remember password
-            </label>
-            <a href="#">Forgot Password?</a>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Confirm Password</label>
           </div>
 
-          <button type="submit" class="login">Sing In</button>
+          <button type="submit" class="login">Sing Up</button>
 
           <div class="register-link">
             <p>
               Already have an account?<a href="#" id="showLogin"> Sign In </a>
             </p>
+          </div>
+
+          <div class="divider-or">
+            <span>or</span>
           </div>
 
           <div class="social-login">

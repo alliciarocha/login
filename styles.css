@@ -248,3 +248,25 @@ body {
     font-size: 13px;
   }
 }
+
+.divider-or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.divider-or::before,
+.divider-or::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--border-light);
+  margin: 0 10px;
+}
+
+.divider-or span {
+  padding: 0 5px;
+}
