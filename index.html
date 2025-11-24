@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="img/video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="container">
+      <form>
+        <h1>Sing In</h1>
+
+        <div class="input-box">
+          <input type="email" required />
+          <label>Username</label>
+          <i class="bx bx-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" required />
+          <label>Password</label>
+          <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <label>
+            <input type="checkbox" />
+            Remember password
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login">Sing In</button>
+
+        <div class="register-link">
+          <p>Don't have an account?<a href="#"> Register </a></p>
+        </div>
+
+        <div class="social-login">
+          <div class="social-login-box">
+            <ion-icon class="bx bxl-google bx-sm"></ion-icon> 
+          </div>
+          <div class="social-login-box">
+            <ion-icon class="bx bxl-facebook bx-sm"></ion-icon>
+          </div>
+          <div class="social-login-box">
+            <ion-icon class="bx bxl-apple bx-sm"></ion-icon>
+          </div> 
+      </form>
+
+    </div>
+  </body>
+</html>
