@@ -4,19 +4,14 @@
   --primary: #a266ff;
   --primary-light: #c9a6ff;
   --primary-dark: #6c3bb8;
-
   --text-light: #ffffff;
   --text-dark: #333333;
-
   --bg-blur: rgba(255, 255, 255, 0.12);
   --border-light: rgba(255, 255, 255, 0.2);
-
   --input-bg: transparent;
   --input-border: rgba(255, 255, 255, 0.2);
-
   --button-bg: #ffffff;
   --button-text: #333;
-
   --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -181,7 +176,7 @@ body {
 }
 
 .input-box {
-  position: relative; /* Já estava definido acima, mas crucial para o label */
+  position: relative;
 }
 
 .input-box label {
@@ -190,7 +185,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.7);
-
   font-size: 16px;
   pointer-events: none;
   transition: 0.3s ease;
@@ -208,17 +202,18 @@ body {
   padding: 0 10px;
 }
 
-/* .input-box input:focus {
-  border-color: var(--primary-light);
-  box-shadow: 0 0 10px var(--primary-light);
-} */
-
 .input-box input[type="password"]::-ms-reveal,
 .input-box input[type="password"]::-ms-clear {
   filter: invert(1);
   cursor: pointer;
 }
 
+/* Regra para esconder o segundo formulário até ser ativado */
+.hidden {
+  display: none;
+}
+
+/* Media Query para responsividade */
 @media (max-width: 450px) {
   .container {
     width: 90%;
@@ -226,34 +221,28 @@ body {
     padding: 20px 25px;
     margin: 20px;
   }
-
   .container h1 {
     font-size: 30px;
   }
-
   .input-box input {
     padding: 15px 45px 15px 15px;
     font-size: 15px;
   }
-
   .input-box label {
     left: 15px;
     font-size: 14px;
   }
-
   .input-box input:focus + label,
   .input-box input:valid + label {
     top: -10px;
     left: 10px;
     font-size: 11px;
   }
-
   .social-login-box {
     width: 35px;
     height: 35px;
     font-size: 18px;
   }
-
   .remember-forgot,
   .register-link {
     font-size: 13px;

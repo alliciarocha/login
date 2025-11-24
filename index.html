@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="styles.css" />
-
     <title>Login</title>
   </head>
   <body>
@@ -19,47 +16,107 @@
     </video>
 
     <div class="container">
-      <form>
-        <h1>Sing In</h1>
+      <div class="login-form" id="loginForm">
+        <form>
+          <h1>Sing In</h1>
 
-        <div class="input-box">
-          <input type="email" required />
-          <label>Username</label>
-          <i class="bx bx-user"></i>
-        </div>
-
-        <div class="input-box">
-          <input type="password" required />
-          <label>Password</label>
-          <i class="bx bx-lock-alt"></i>
-        </div>
-
-        <div class="remember-forgot">
-          <label>
-            <input type="checkbox" />
-            Remember password
-          </label>
-          <a href="#">Forgot Password?</a>
-        </div>
-
-        <button type="submit" class="login">Sing In</button>
-
-        <div class="register-link">
-          <p>Don't have an account?<a href="#"> Register </a></p>
-        </div>
-
-        <div class="social-login">
-          <div class="social-login-box">
-            <ion-icon class="bx bxl-google bx-sm"></ion-icon> 
+          <div class="input-box">
+            <input type="email" required />
+            <label>Username</label>
+            <i class="bx bx-user"></i>
           </div>
-          <div class="social-login-box">
-            <ion-icon class="bx bxl-facebook bx-sm"></ion-icon>
-          </div>
-          <div class="social-login-box">
-            <ion-icon class="bx bxl-apple bx-sm"></ion-icon>
-          </div> 
-      </form>
 
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+            <i class="bx bx-lock-alt"></i>
+          </div>
+
+          <div class="remember-forgot">
+            <label>
+              <input type="checkbox" />
+              Remember password
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login">Sing In</button>
+
+          <div class="register-link">
+            <p>
+              Don't have an account?<a href="#" id="showSignup"> Register </a>
+            </p>
+          </div>
+
+          <div class="social-login">
+            <div class="social-login-box">
+              <ion-icon class="bx bxl-google bx-sm"></ion-icon>
+            </div>
+            <div class="social-login-box">
+              <ion-icon class="bx bxl-facebook bx-sm"></ion-icon>
+            </div>
+            <div class="social-login-box">
+              <ion-icon class="bx bxl-apple bx-sm"></ion-icon>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="signup-form hidden" id="signupForm">
+        <form>
+          <h1>Sing Up</h1>
+
+          <div class="input-box">
+            <input type="email" required />
+            <label>Username</label>
+            <i class="bx bx-user"></i>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+            <i class="bx bx-lock-alt"></i>
+          </div>
+
+          <div class="remember-forgot">
+            <label>
+              <input type="checkbox" />
+              Remember password
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login">Sing In</button>
+
+          <div class="register-link">
+            <p>
+              Already have an account?<a href="#" id="showLogin"> Sign In </a>
+            </p>
+          </div>
+
+          <div class="social-login">
+            <div class="social-login-box">
+              <ion-icon class="bx bxl-google bx-sm"></ion-icon>
+            </div>
+            <div class="social-login-box">
+              <ion-icon class="bx bxl-facebook bx-sm"></ion-icon>
+            </div>
+            <div class="social-login-box">
+              <ion-icon class="bx bxl-apple bx-sm"></ion-icon>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
