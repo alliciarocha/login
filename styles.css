@@ -213,6 +213,12 @@ body {
   box-shadow: 0 0 10px var(--primary-light);
 } */
 
+.input-box input[type="password"]::-ms-reveal,
+.input-box input[type="password"]::-ms-clear {
+  filter: invert(1);
+  cursor: pointer;
+}
+
 @media (max-width: 450px) {
   .container {
     width: 90%;
