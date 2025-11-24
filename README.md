@@ -30,17 +30,6 @@ The project was built using fundamental web development technologies:
 
 ---
 
-### 📂 Project Structure
-login/
-├── img/            # Images and assets (including the video)
-│   ├── img.jpg
-│   └── video.mp4
-├── styles.css      # Styles and design rules
-├── script.js       # Form toggling logic
-└── index.html      # Main page structure
-
----
-
 ### ⚙️ How to Run Locally
 
 Follow these steps to get a local copy of the project up and running:
