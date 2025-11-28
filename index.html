@@ -14,20 +14,19 @@
     <video autoplay loop muted playsinline id="bg-video">
       <source src="src\img\video.mp4" type="video/mp4" />
     </video>
-
     <div class="container">
       <div class="login-form" id="loginForm">
-        <form>
-          <h1>Sing In</h1>
+        <form id="formLoginData" action="login.php" method="POST">
+          <h1>Sign In</h1>
 
           <div class="input-box">
-            <input type="email" required />
+            <input type="email" name="email" required />
             <label>Username</label>
             <i class="bx bx-user"></i>
           </div>
 
           <div class="input-box">
-            <input type="password" required />
+            <input type="password" name="password" required />
             <label>Password</label>
             <i class="bx bx-lock-alt"></i>
           </div>
@@ -40,7 +39,7 @@
             <a href="#">Forgot Password?</a>
           </div>
 
-          <button type="submit" class="login">Sing In</button>
+          <button type="submit" class="login">Sign In</button>
 
           <div class="register-link">
             <p>
@@ -63,30 +62,30 @@
       </div>
 
       <div class="signup-form hidden" id="signupForm">
-        <form>
+        <form id="formRegisterData" action="cadastro.php" method="POST">
           <h1>Create An Account</h1>
 
           <div class="input-box">
-            <input type="text" required />
+            <input type="text" name="fullname" required />
             <label>Full Name</label>
           </div>
 
           <div class="input-box">
-            <input type="email" required />
+            <input type="email" name="email" required />
             <label>Email</label>
           </div>
 
           <div class="input-box">
-            <input type="password" required />
+            <input type="password" name="password" required />
             <label>Password</label>
           </div>
 
           <div class="input-box">
-            <input type="password" required />
+            <input type="password" name="confirm_password" required />
             <label>Confirm Password</label>
           </div>
 
-          <button type="submit" class="login">Sing Up</button>
+          <button type="submit" class="login">Sign Up</button>
 
           <div class="register-link">
             <p>
